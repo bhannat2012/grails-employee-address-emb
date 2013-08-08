@@ -10,8 +10,8 @@ class Employee {
     static constraints = {
         fName()
         age()
-        localAddress nullable: true;
-        personalAddress nullable: true;
+        /*localAddress nullable: true;
+        personalAddress nullable: true;*/
     }
 
     static embedded = ['personalAddress','localAddress']

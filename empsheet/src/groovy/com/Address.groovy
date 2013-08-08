@@ -10,4 +10,15 @@ class Address {
     String city;
     String pin;
     String state;
+    static constraints={
+        city blank:false
+    }
+
+    String toString(){
+        """${line1}
+            ${line2}
+            ${city}
+            ${pin}
+            ${state}"""
+    }
 }
